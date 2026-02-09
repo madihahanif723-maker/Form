@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form - SMIT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <label for="fn">Full Name :</label>
+      <input type="text" id="fn" required size="30" />
+
+      <br /><br />
+
+      <label for="father'n">Father Name :</label>
+      <input type="text" id="father'n" required size="30" />
+
+      <br /><br />
+
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" required size="35" />
+
+      <br /><br />
+      <label for="phone">Phone:</label>
+      <input
+        placeholder="xxxxxxxxxxx"
+        type="number"
+        name="phone"
+        id="phone"
+        required
+      />
+
+      <br /><br />
+
+      <label for="cnic">CNIC:</label>
+      <input placeholder="xxxxxxxxxxxxxx" type="number" name="cnic"  id="cnic"  required  size="30" />
+      <br /><br />
+      <label
+        >Date of Birth: <input type="date" value="Data" id="dfb" required
+      /></label>
+
+      <br /><br />
+      <label
+        >Upload your Image <br /><br />
+        <input type="file" name="user Image" id="profile" required />
+      </label>
+      <br /><br />
+      <button onclick="resetForm()" type="reset" name="reset" value="Reset Form" class="five" id="resetBtn">
+        Reset Form</button>
+
+      <button onclick="submitForm()" type="submit" name="Submit" value="Submit Form" class="five" id="submitBtn">
+        Submit Form</button>
+  
+      <br /><br />
+    </div>
+    <div class="container">
+     <div id="output" class="card">
+         <h2>Submitted Data:</h2>
+         <p id="outputName"></p>
+         <p id="outputFatherName"></p>
+         <p id="outputEmail"></p>
+         <p id="outputPhone"></p>
+         <p id="outputCnic"></p>
+         <p id="outputDob"></p>
+         <img id="outputImage" src="" alt="Profile Image" style="max-width: 200px; margin-top: 10px;" />
+     </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
